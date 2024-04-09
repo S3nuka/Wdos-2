@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Normalise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&family=Kurale&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Style for the editor popup */
+        #editorPopup {
+            display: none;
+            position: fixed;
+            width: 40vw;
+            height: 20vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            width: 20vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .butCont{
+            display: flex;
+            justify-content: center;
+        }
+        #subButton{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background: #1E90FF;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+
+        #viewButton{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background: #1E90FF;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="header1">
+            <section class="nav-sec">
+                <a href="#"><img src="Images/Logo.png" alt="" id="logo"></a>
+            <div class="navlinks" id="Link">
+                <i class='bx bx-x' id="hide" onclick="setTimeout(hideMenu(),700)"></i>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan Wildlife Introduction</a></li>
+                    <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                    <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                    <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                    <li id="loginButton"><a href="login.html">Login</a></li>
+                    <li id="logoutButton"><a href="#" onclick="LogOut()">LogOut</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' id="show" onclick="showMenu()"></i>
+            </section>
+        </nav>
+        <!-- info -->
+        <section class="important" >
+            <h1 id="Sub1Title"></h1>
+            <p id="Sub1para"></p>
+        </section>
+        <section class="important">
+            <div class="importantrow">
+                <section class="importantcol">
+                    <img src="Images/Home 1.jpg" alt="">
+                    <h3 id="Sub2Title"></h3>
+                    <ul>
+                        <li>Asian elephant</li>
+                        <li>Leopard</li>
+                        <li>The Sloth Bear</li>
+                    </ul>
+                    <p id="Sub2para1"></p><p id="Sub2para2"></p>
+                    
+                </section>
+                <section class="importantcol">
+                    <img src="Images/main 2.jpg" alt="">
+                    <h3 id="Sub3Title"></h3>
+                    <ol>
+                        <li>Sri Lankan Junglefowl</li>
+                        <li>Purple-faced langur</li>
+                        <li>Sri Lanka blue magpie</li>
+                    </ol>
+                    <p id="Sub3para1"></p><p id="Sub3para2"></p>
+                </section>
+                <section class="importantcol">
+                    <img src="Images/first 3.jpg" alt="">
+                    <h3 id="Sub4Title"></h3>
+                        <li>Deforestation</li>
+                        <li>Habitat destruction</li>
+                    </ul>
+                    <p id="Sub4para1"></p> <p id="Sub4para2"></p>
+                </section>
+            </div>
+        </section>
+        <section class="mostvisit">
+            <h1 id="Sub5Title">Most Visited Locations</h1>
+            <div class="mvrow">
+                <div class="mvcol">
+                    <img src="Images/first 4.jpg" alt="">
+                    <div class="mvlayer">
+                        <h3>Yala National Park</h3>
+                    </div>
+                </div>
+                <div class="mvcol">
+                    <img src="Images/first 5.jpg" alt="">
+                    <div class="mvlayer">
+                        <h3>Wilpattu National Park</h3>
+                    </div>
+                </div>
+                <div class="mvcol">
+                    <img src="Images/first 6.jpg" alt="">
+                    <div class="mvlayer">
+                        <h3>Horton Plains</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="editorPopup">
+            <select id="elementSelector" onchange="loadContent()">
+                <option value="Sub1Title">Sub1Title</option>
+                <option value="Sub1para">Sub1para</option>
+                <option value="Sub2Title">Sub2Title</option>
+                <option value="Sub2para1">Sub2para1</option>
+                <option value="Sub2para2">Sub2para2</option>
+                <option value="Sub3Title">Sub3Title</option>
+                <option value="Sub3para1">Sub3para1</option>
+                <option value="Sub3para2">Sub3para2</option>
+                <option value="Sub4Title">Sub4Title</option>
+                <option value="Sub4para1">Sub4para1</option>
+                <option value="Sub4para2">Sub4para2</option>
+                <option value="Sub5Title">Sub5Title</option>
+            </select>
+            <br>
+            <textarea id="editedContent"></textarea>
+            <br>
+            <button onclick="saveChanges()">Save</button>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletterForm">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <button onclick="closePopup()">Close</button>
+        </div>
+        <!-- <ul id="subscriptionList">
+            
+        </ul> -->
+        
+    </main>
+
+    <footer>
+        <div class="butCont">
+            <button onclick="openPopup()" id="subButton" style="display: none;">Subscribe to Newsletter</button>
+            <button id="viewButton" onclick="viewSubmissions()">View Subscriptions</button>
+        </div>
+        <div class="footcon">
+            <div class="social">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-google-plus' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <div class="footnav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan wildlife Introduction</a></li>
+                    <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                    <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                    <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                    <button onclick="openEditor()" id="editButton">Edit Content</button>
+                </ul>
+            </div>
+        </div>
+        <div class="footbot">
+            <p>Copyright &#169;2023; Designed by <span class="design">Senuka</span></p>
+        </div>
+        <!-- References
+        Lanka, B., 2019. Most Endangered Species Of Sri Lanka. [Online] 
+        Available at: https://medium.com/@bestoflanka/most-endangered-species-of-sri-lanka-4ea5ea20eb99
+        [Accessed 19 January 2024].
+        NAYANAW, 2020. Endemic Animals. [Online] 
+        Available at: https://science.sjp.ac.lk/zsjp/2020/05/17/endemic-animals-4/
+        [Accessed 19 January 2024].
+        Samaranayake, L. C. N., 2023. Deforestation and Biodiversity Loss in Sri Lanka's Rainforests: A Critical Analysis of Consequences and Implications. [Online] 
+        Available at: https://www.inss.lk/index.php?id=534#:~:text=Deforestation%20and%20habitat%20destruction%20in,and%20unique%20flora%20and%20fauna.
+        [Accessed 19 January 2024]. -->
+
+
+    </footer>
+<!-- Javascript for mobile menu     -->
+    <script src="Home.js"></script>
+    <script>
+        var Link = document.getElementById("Link")
+        var show = document.getElementById("show")
+        var hide = document.getElementById("hide")
+
+        function showMenu(){
+            Link.style.right = "0"
+        }
+
+        function hideMenu(){
+            Link.style.right = "-200px"        
+
+        }
+
+
+    </script>
+    <script>
+        function openEditor() {
+            document.getElementById('editorPopup').style.display = 'block';
+            loadContent();
+        }
+    
+        function loadContent() {
+            var selectedElementId = document.getElementById('elementSelector').value;
+            var content = document.getElementById(selectedElementId).innerText;
+            document.getElementById('editedContent').value = content;
+            console.log("loadContent")
+        }
+    
+        function saveChanges() {
+            var editedContent = document.getElementById('editedContent').value;
+            var selectedElementId = document.getElementById('elementSelector').value;
+            document.getElementById(selectedElementId).innerText = editedContent;
+            localStorage.setItem(selectedElementId, editedContent);
+            document.getElementById('editorPopup').style.display = 'none';
+            console.log("saveChanges")
+        }
+        
+    </script><script>
+    function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    var newsletterSubscriptions = JSON.parse(localStorage.getItem('newsletter_subscriptions'));
+    if (!newsletterSubscriptions) {
+        newsletterSubscriptions = [];
+        localStorage.setItem('newsletter_subscriptions', JSON.stringify(newsletterSubscriptions));
+    }
+
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const email = document.getElementById('email').value.trim();
+        if (!validateEmail(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        const existingSubscription = newsletterSubscriptions.includes(email);
+        
+        if (existingSubscription) {
+            alert('You are already subscribed to the newsletter.');
+        } else {
+            newsletterSubscriptions.push(email);
+            localStorage.setItem('newsletter_subscriptions', JSON.stringify(newsletterSubscriptions));
+            alert('Thank you for subscribing to the newsletter!');
+            closePopup(); 
+        }
+    });
+
+    function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+
+        function viewSubmissions() {
+            window.location.href = "submissions.html";
+        }
+</script>
+
+</body>
+
+</html>

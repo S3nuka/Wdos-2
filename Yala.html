@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals in Sri Lanka</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="yala.css">
+    <link rel="stylesheet" href="Normalise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&family=Kurale&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Style for the editor popup */
+        #editorPopup {
+            display: none;
+            position: fixed;
+            height: 20vh;
+            width: 40vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header1">
+        <section class="nav-sec">
+            <a href="#"><img src="Images/Logo.png" alt="" id="logo"></a>
+        <div class="navlinks" id="Link">
+            <i class='bx bx-x' id="hide" onclick="setTimeout(hideMenu(),700)"></i>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan Wildlife Introduction</a></li>
+                <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                <li id="loginButton"><a href="login.html">Login</a></li>
+                <li id="logoutButton"><a href="#" onclick="LogOut()">LogOut</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' id="show" onclick="showMenu()"></i>
+        </section>
+    </nav>
+    <main>
+
+        <section class="lasthead2">
+            <h1 id="Sub1Title"></h1>
+            <p id="Sub1para"></p>
+        </section>
+
+        <section class="seventh">
+            <div class="seventhrow">
+                <section class="seventhcol1">
+                    <img src="Images/six 1.jpg" alt="">
+                    <div class="seventhtextbox1">
+                        <h3 id="Sub2Title"></h3>
+                        <p id="Sub2para"></p>
+                    </div>
+                </section>
+                <section class="seventhcol2">
+                    <img src="Images/six 2.jpeg" alt="">
+                    <div class="seventhtextbox2">
+                        <h3 id="Sub3Title"></h3>
+                        <p id="Sub3para"></p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section>
+            <div class="seventhwrap">
+                <div class="seventhwrapper">
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.782988928731!2d79.9198057!3d6.8970927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1703312164308!5m2!1sen!2slk" width="700" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                    <div class="seventhtextbox1">
+            </div>
+        </section>
+        <div id="editorPopup">
+            <select id="elementSelector" onchange="loadContent()">
+                <option value="Sub1Title">Sub1Title</option>
+                <option value="Sub1para">Sub1para</option>
+                <option value="Sub2Title">Sub2Title</option>
+                <option value="Sub2para">Sub2para</option>
+                <option value="Sub2para2">Sub2para2</option>
+                <option value="Sub3Title">Sub3Title</option>
+                <option value="Sub3para">Sub3para</option>
+            </select>
+            <br>
+            <textarea id="editedContent"></textarea>
+            <br>
+            <button onclick="saveChanges()">Save</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footcon">
+            <div class="social">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-google-plus' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <div class="footnav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan wildlife Introduction</a></li>
+                    <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                    <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                    <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                    <button onclick="openEditor()" id="editButton">Edit Content</button>
+                </ul>
+            </div>
+        </div>
+        <div class="footbot">
+            <p>Copyright &#169;2023; Designed by <span class="design">Senuka</span></p>
+        </div>
+        <!-- References
+        c_michael_hogan, 2017. Yala National Park, Sri Lanka. [Online] 
+        Available at: https://www.inaturalist.org/posts/9874-yala-national-park-sri-lanka#:~:text=In%20Yala%20the%20dominant%20canopy,other%20organisms%20in%20this%20ecoregion.
+        [Accessed 19 January 2024].
+        discoverwildlife, 2023. What wildlife can I see in Yala National Park, Sri Lanka?. [Online] 
+        Available at: https://www.discoverwildlife.com/holidays-days-out/asia/what-wildlife-can-i-see-in-yala-national-park-sri-lanka
+        [Accessed 19 January 2024]. -->
+
+
+    </footer>
+
+<!-- Javascript for mobile menu     -->
+    <script>
+        var Link = document.getElementById("Link")
+        var show = document.getElementById("show")
+        var hide = document.getElementById("hide")
+
+        function showMenu(){
+            Link.style.right = "0"
+        }
+
+        function hideMenu(){
+            Link.style.right = "-200px"        
+
+        }
+
+
+    </script>
+    <script>
+        function openEditor() {
+            document.getElementById('editorPopup').style.display = 'block';
+            loadContent();
+        }
+    
+        function loadContent() {
+            var selectedElementId = document.getElementById('elementSelector').value;
+            var content = document.getElementById(selectedElementId).innerText;
+            document.getElementById('editedContent').value = content;
+            console.log("loadContent")
+        }
+    
+        function saveChanges() {
+            var editedContent = document.getElementById('editedContent').value;
+            var selectedElementId = document.getElementById('elementSelector').value;
+            document.getElementById(selectedElementId).innerText = editedContent;
+            localStorage.setItem(selectedElementId, editedContent);
+            document.getElementById('editorPopup').style.display = 'none';
+            console.log("saveChanges")
+        }
+        
+    </script>
+
+</body>
+<script src="Yala.js"></script>
+</html>

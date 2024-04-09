@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Submissions</title>
+</head>
+<body>
+    <h1>All Newsletter Submissions</h1>
+    <ul id="allSubmissionsList">
+    </ul>
+    <section>
+        <li><a href="Home.html"><button>Go Back</button></a></li>
+    </section>
+    
+
+    <script>
+        var allNewsletterSubmissions = JSON.parse(localStorage.getItem('newsletter_subscriptions'));
+        var allSubmissionsList = document.getElementById('allSubmissionsList');
+        
+        if (allNewsletterSubmissions && allNewsletterSubmissions.length > 0) {
+            allNewsletterSubmissions.forEach(function(email) {
+                var listItem = document.createElement('li');
+                listItem.textContent = email;
+                allSubmissionsList.appendChild(listItem);
+            });
+        } else {
+            var noSubmissionsMessage = document.createElement('li');
+            noSubmissionsMessage.textContent = "No submissions yet.";
+            allSubmissionsList.appendChild(noSubmissionsMessage);
+        }
+    </script>
+</body>
+</html>

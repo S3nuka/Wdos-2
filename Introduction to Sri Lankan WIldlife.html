@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals in Sri Lanka</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Normalise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&family=Kurale&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Style for the editor popup */
+        #editorPopup {
+            display: none;
+            position: fixed;
+            height: 20vh;
+            width: 40vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header2">
+        <section class="nav-sec">
+            <a href="#"><img src="Images/Logo.png" alt="" id="logo"></a>
+        <div class="navlinks" id="Link">
+            <i class='bx bx-x' id="hide" onclick="setTimeout(hideMenu(),700)"></i>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan Wildlife Introduction</a></li>
+                <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                <li id="loginButton"><a href="login.html">Login</a></li>
+                <li id="logoutButton"><a href="#" onclick="LogOut()">LogOut</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' id="show" onclick="showMenu()"></i>
+        </section>
+    </nav>
+    <!-- info -->
+    <section class="heading">
+        <h1 id="Sub1Title"></h1>
+        <p id="Sub1para"></p>
+    </section>
+    <br><br>
+    <section>
+        <div class="secondwrap">
+            <div class="secondwrapper">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31716.101282319054!2d80.86193360577161!3d6.456538086228034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!4v1705613881828!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                <div class="secondtextbox1">
+                    <h3 id="Sub2Title"></h3>
+                    <p id="Sub2para"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="placeimg">
+        <div class="placeimgrow">
+            <section class="placeimgcol">
+                <img src="Images/second 1.jpg" alt="">
+            </section>
+            <section class="placeimgcol">
+                <img src="Images/second 2.jpg" alt="">
+            </section>
+            <section class="placeimgcol">
+                <img src="Images/second 3.jpg" alt="">
+            </section>
+        </div>
+    </section>
+
+    <section>
+        <div class="secondwrap">
+            <div class="secondwrapper">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6740385671706!2d80.79975837499546!3d6.809445993188088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1705614655611!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                <div class="secondtextbox1">
+                    <h3 id="Sub3Title"></h3>
+                    <p id="Sub3para"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="placeimg">
+        <div class="placeimgrow">
+            <section class="placeimgcol">
+                <img src="Images/second 4.jpg" alt="">
+            </section>
+            <section class="placeimgcol">
+                <img src="Images/second 5.jpg" alt="">
+            </section>
+            <section class="placeimgcol">
+                <img src="Images/second 6.jpg" alt="">
+            </section>
+        </div>
+    </section>
+
+    <secion class="table">
+        <div class="tableheader">
+            <div class="tableheader1">
+                <h1 id="TableHead"></h1>
+            </div>
+        </div>
+        <div class="tablesection">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="th1"></th>
+                        <th id="th2"></th>
+                        <th id="th3"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="name1"></td>
+                        <td id="funfact1"></td>
+                        <td><img src="Images/asiam.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td id="name2"></td>
+                        <td id="funfact2"></td>
+                        <td><img src="Images/sloth.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td id="name3"></td>
+                        <td id="funfact3"></td>
+                        <td><img src="Images/sambar.jpg" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </secion>
+    <div id="editorPopup">
+        <select id="elementSelector" onchange="loadContent()">
+            <option value="Sub1Title">Sub1Title</option>
+            <option value="Sub1para">Sub1para</option>
+            <option value="Sub2Title">Sub2Title</option>
+            <option value="Sub2para">Sub2para</option>
+            <option value="Sub3Title">Sub3Title</option>
+            <option value="Sub3para">Sub3para</option>
+        </select>
+        <br>
+        <textarea id="editedContent"></textarea>
+        <br>
+        <button onclick="saveChanges()">Save</button>
+    </div>
+    <footer>
+        <div class="footcon">
+            <div class="social">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-google-plus' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <div class="footnav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan wildlife Introduction</a></li>
+                    <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                    <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                    <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                    <button onclick="openEditor()" id="editButton">Edit Content</button>
+                </ul>
+            </div>
+        </div>
+        <div class="footbot">
+            <p>Copyright &#169;2023; Designed by <span class="design">Senuka</span></p>
+        </div>
+        <!-- References
+        lonely planet, 2024. Horton Plains National Park. [Online] 
+        Available at: https://www.lonelyplanet.com/sri-lanka/the-hill-country/horton-plains-national-park-and-worlds-end/attractions/horton-plains-national-park/a/poi-sig/1195257/357476
+        [Accessed 19 January 2024].
+        lonely planet, 2024. Uda Walawe National Park. [Online] 
+        Available at: https://www.lonelyplanet.com/sri-lanka/the-hill-country/udawalawe-national-park/attractions/uda-walawe-national-park/a/poi-sig/1195453/357481
+        [Accessed 19 January 2024]. -->
+
+
+    </footer>
+
+<!-- Javascript for mobile menu     -->
+    <script>
+        var Link = document.getElementById("Link")
+        var show = document.getElementById("show")
+        var hide = document.getElementById("hide")
+
+        function showMenu(){
+            Link.style.right = "0"
+        }
+
+        function hideMenu(){
+            Link.style.right = "-200px"        
+
+        }
+
+
+    </script>
+    <script>
+        function openEditor() {
+            document.getElementById('editorPopup').style.display = 'block';
+            loadContent();
+        }
+    
+        function loadContent() {
+            var selectedElementId = document.getElementById('elementSelector').value;
+            var content = document.getElementById(selectedElementId).innerText;
+            document.getElementById('editedContent').value = content;
+            console.log("loadContent")
+        }
+    
+        function saveChanges() {
+            var editedContent = document.getElementById('editedContent').value;
+            var selectedElementId = document.getElementById('elementSelector').value;
+            document.getElementById(selectedElementId).innerText = editedContent;
+            localStorage.setItem(selectedElementId, editedContent);
+            document.getElementById('editorPopup').style.display = 'none';
+            console.log("saveChanges")
+        }
+        
+    </script>
+    
+</body>
+<script src="Introduction to Sri Lankan Wildlife.js"></script>
+</html>

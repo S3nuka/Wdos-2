@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals in Sri Lanka</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Normalise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&family=Kurale&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Style for the editor popup */
+        #editorPopup {
+            display: none;
+            position: fixed;
+            height: 20vh;
+            width: 40vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header4">
+        <section class="nav-sec">
+            <a href="#"><img src="Images/Logo.png" alt="" id="logo"></a>
+        <div class="navlinks" id="Link">
+            <i class='bx bx-x' id="hide" onclick="setTimeout(hideMenu(),700)"></i>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan Wildlife Introduction</a></li>
+                <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                <li id="loginButton"><a href="login.html">Login</a></li>
+                <li id="logoutButton"><a href="#" onclick="LogOut()">LogOut</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' id="show" onclick="showMenu()"></i>
+        </section>
+    </nav>
+    <main>
+        <section class="heading">
+            <h1 id="Sub1Title"></h1>
+            <p id="Sub1para"></p>
+        </section>
+            <br><br>
+        <section class="fol">
+            <h1 id="Sub2Title"></h1>
+        </section>
+            <br>
+        <section>
+            <div class="fourthwrap">
+                <div class="fourthwrapper">
+                    <div><img src="Images/yala5.jpg" alt=""></div>
+                    <div class="fourthtextbox1">
+                        <h3 id="Sub3Title"></h3>
+                        <p id="Sub3para1">
+                        </p>
+                        <br>
+                        <p id="Sub3para2">
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section>
+            <div class="fourthwrap">
+                <div class="fourthwrapper">
+                    <img src="Images/kumana4.jpg" alt="">
+                    <div class="fourthtextbox1">
+                        <h3 id="Sub4Title"></h3>
+                        <p id="Sub4para1">
+                        </p>
+                        <br>
+                        <p id="Sub4para2">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="fourthwrap">
+                <div class="fourthwrapper">
+                    <img src="Images/Wilpattu1.jpg" alt="">
+                    <div class="fourthtextbox1">
+                        <h3 id="Sub5Title"></h3>
+                        <p id="Sub5para">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fol">
+            <h1 id="Sub6Title"></h1>
+        </section>
+
+        <section class="threatimg">
+            <div class="threatimg1">
+                <div class="threatimg2">
+                    <img src="Images/leopard poaching.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="important">
+            <div class="importantrow">
+                <section class="importantcol">
+                    <h3 id="Sub7Title"></h3>
+                    <p id="Sub7para"></p>
+                </section>
+                <section class="importantcol">
+                    <h3 id="Sub8Title"></h3>
+                    <p id="Sub8para"></p>
+                </section>
+                <section class="importantcol">
+                    <h3 id="Sub9Title"></h3>
+                    <p id="Sub9para"></p>
+                </section>
+            </div>
+        </section>
+        <section class="threatimg">
+            <div class="threatimg1">
+                <div class="threatimg2">
+                    <img src="Images/human leopard conflict.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="important">
+            <div class="importantrow">
+                <section class="importantcol">
+                    <h3 id="Sub10Title"></h3>
+                    <p id="Sub10para"></p>
+                </section>
+                <section class="importantcol">
+                    <h3 id="Sub11Title"></h3>
+                    <p id="Sub11para"></p>
+                </section>
+                <section class="importantcol">
+                    <h3 id="Sub12Title"></h3>
+                    <p id="Sub12para"></p>
+                </section>
+            </div>
+        </section>
+        <div id="editorPopup">
+            <select id="elementSelector" onchange="loadContent()">
+                <option value="Sub1Title">Sub1Title</option>
+                <option value="Sub1para">Sub1para</option>
+                <option value="Sub2Title">Sub2Title</option>
+                <option value="Sub3Title">Sub3Title</option>
+                <option value="Sub3para1">Sub3para1</option>
+                <option value="Sub3para2">Sub3para2</option>
+                <option value="Sub4Title">Sub4Title</option>
+                <option value="Sub4para1">Sub4para1</option>
+                <option value="Sub4para2">Sub4para2</option>
+                <option value="Sub5Title">Sub5Title</option>
+                <option value="Sub5para">Sub5para</option>
+                <option value="Sub6Title">Sub6Title</option>
+                <option value="Sub7Title">Sub7Title</option>
+                <option value="Sub7para">Sub7para</option>
+                <option value="Sub8Title">Sub8Title</option>
+                <option value="Sub8para">Sub8para</option>
+                <option value="Sub9Title">Sub9Title</option>
+                <option value="Sub9para">Sub9para</option>
+                <option value="Sub10Title">Sub10Title</option>
+                <option value="Sub10para">Sub10para</option>
+                <option value="Sub11Title">Sub11Title</option>
+                <option value="Sub11para">Sub11para</option>
+                <option value="Sub12Title">Sub12Title</option>
+                <option value="Sub12para">Sub12para</option>
+                
+            </select>
+            <br>
+            <textarea id="editedContent"></textarea>
+            <br>
+            <button onclick="saveChanges()">Save</button>
+        </div>
+        <br><br><br>
+        <footer>
+            <div class="footcon">
+                <div class="social">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-instagram' ></i></a>
+                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                    <a href=""><i class='bx bxl-google-plus' ></i></a>
+                    <a href=""><i class='bx bxl-youtube' ></i></a>
+                </div>
+                <div class="footnav">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan wildlife Introduction</a></li>
+                        <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                        <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                        <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                        <button onclick="openEditor()" id="editButton">Edit Content</button>
+                    </ul>
+                </div>
+            </div>
+            <div class="footbot">
+                <p>Copyright &#169;2023; Designed by <span class="design">Senuka</span></p>
+            </div>
+            <!-- References
+            leopardsafari, 2020. Human & Leopard Conflict in Sri Lanka. [Online] 
+            Available at: https://www.leopardsafari.com/leopards-in-sri-lanka/human-and-leopard-conflict-in-sri-lanka.html
+            [Accessed 19 January 2024].
+            SLYCAN Trust, n.d. Experiences across the island show that subsistence poachers can turn away from poaching when presented with alternative livelihood options. If the tourism sector manages to recover after the first wave of the pandemic, there is a great potential to expan. [Online] 
+            Available at: https://www.slycantrust.org/blog-posts-knowledge/poaching-and-wildlife-trafficking-in-sri-lanka-during-covid-19
+            [Accessed 19 January 2024].
+            srilankainstyle, 2024. Spotting the Sri Lankan Leopard. [Online] 
+            Available at: https://www.srilankainstyle.com/blog/spotting-the-sri-lankan-leopard
+            [Accessed 19 January 2024]. -->
+
+
+        </footer>
+    
+    <!-- Javascript for mobile menu     -->
+        <script>
+            var Link = document.getElementById("Link")
+            var show = document.getElementById("show")
+            var hide = document.getElementById("hide")
+    
+            function showMenu(){
+                Link.style.right = "0"
+            }
+    
+            function hideMenu(){
+                Link.style.right = "-200px"        
+    
+            }
+    
+    
+        </script>
+        <script>
+            function openEditor() {
+                document.getElementById('editorPopup').style.display = 'block';
+                loadContent();
+            }
+        
+            function loadContent() {
+                var selectedElementId = document.getElementById('elementSelector').value;
+                var content = document.getElementById(selectedElementId).innerText;
+                document.getElementById('editedContent').value = content;
+                console.log("loadContent")
+            }
+        
+            function saveChanges() {
+                var editedContent = document.getElementById('editedContent').value;
+                var selectedElementId = document.getElementById('elementSelector').value;
+                document.getElementById(selectedElementId).innerText = editedContent;
+                localStorage.setItem(selectedElementId, editedContent);
+                document.getElementById('editorPopup').style.display = 'none';
+                console.log("saveChanges")
+            }
+            
+        </script>
+        
+    </main>
+</body>
+<script src="Sri Lankan leopard.js"></script>
+</html>

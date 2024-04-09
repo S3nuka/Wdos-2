@@ -1,0 +1,55 @@
+{
+    "Main":
+    {
+        "Title":"Sri Lankan Leopard",
+        "Description":"Although it is the lion that adorns the Sri Lankan flag and many of its ancient temples, leopards are the island's crowning cat. Sitting at the top of the food chain, there are almost 800 leopards in Sri Lanka. However, these elusive creatures are rarely seen together in a 'leap' - they prefer to prowl alone."
+    },
+    "Body":[  
+        {
+             "Title":"The Sri Lankan Leopard can be found in the following"
+        },
+        {
+            "Title":"Yala National Park",
+            "Description1":"Yala National Park is known as the best place to spot leopards in Sri Lanka. This is because Yala has the highest density of leopards of anywhere on the island. However, this statistic means that the park often has a high density of tourists too, especially in the peak season from December to March.",
+            "Description2":" However, with five different zones to be explored, it is possible to find quiet corners of the park. In addition to its rugged coastline, Yala is comprised of dry grass fields, arid scrubland, and pockets of jungle. Other animals that call this park home include elephants, sloth bears, and crocodiles"
+        },
+        {
+            "Title":"Kumana National Park",
+            "Description1":"Neighbour to Yala, Kumana National Park is a smaller but more tranquil option for those seeking to spot leopards without the crowds. Sightings are rare here, but the scenery is just as stunning. ",
+            "Description2":"This park is primarily a bird sanctuary, its sprawling mangrove lagoon providing a perfect nesting ground for many migrating species. Visit in May and June to see eye-catching water birds such as painted storks, herons, egrets and pelicans"
+        },
+        {
+            "Title":"Wilpattu National Park",
+            "Description":"In the opposite corner of the country to Yala is sensational Wilpattu National Park. This is the largest and most beautiful wildlife reserve in Sri Lanka. Despite being the biggest wildlife park, Wilpattu's remote north-west position means that it is away from the main tourist trail and is therefore much quieter than Yala in terms of tourist numbers. Covered by a network of interlaced lakes, this jungle-rich park hides leopards in the undergrowth as well as sloth bears and endless species of bird."
+        }
+    ],
+    "End":[
+        {
+            "Title":"Threats to Sri Lankan Leopards"
+        },
+        {
+            "Title":"Leopard Poaching",
+            "Description":"Poaching is the killing or catching of an animal protected under the law or killing an animal using illegal methods. It can involve a wide range of different species, methods, means, and motives in countries across the globe. Poaching and wildlife trafficking is one of the biggest illegal businesses worldwide, with a total worth between seven and twenty-three billion dollars per year according to a widely cited 2014 UNEP report."
+        },
+        {
+            "Title":"Consequences",
+            "Description":"Poaching threatens many species and the ecosystems that depend on them. It causes suffering in animals and endangers the lives of wildlife officers, reduces ecosystem functionality and affects the growing wildlife tourism and eco-tourism industry."
+        },
+        {
+            "Title":"Means to reduce threat",
+            "Description":"Experiences across the island show that subsistence poachers can turn away from poaching when presented with alternative livelihood options. If the tourism sector manages to recover after the first wave of the pandemic, there is a great potential to expand sustainable wildlife tourism and transform the relationship between local communities and the surrounding wildlife. This could also free up capacities in the DWC to deal with commercial poachers, although support from law enforcement, tri-forces, and civil society might be necessary to put an end to the illegal hunting and trading of endangered species.  <a href=https://www.leopocon.org/>https://www.leopocon.org/"
+        },
+        {
+            "Title":"Human Leopard Conflict",
+            "Description":"As wild leopards stray into human settlements to prey on grazing livestock, desperate cattle farmers turn vengeful, lacing animal carcasses with poison, killing three wildcats in a village on the boundary of the Nilagala Forest reserve recently."
+        },
+        {
+            "Title":"Consequences",
+            "Description":"The leopard - human conflict is a real issue, which is serious in rural communities living in the estate areas. A decrease in habitat and wild prey has increased the number of leopards’ intrusions in attacking domesticated animals."
+        },
+        {
+            "Title":"Means to reduce threat",
+            "Description":"The Department of Wildlife Conservation (DWC) officials visits these areas and briefs the villagers, eliminating their fears, but it is inadequate and the negative trend seems to be growing. <a href=https://www.leopocon.org/>https://www.leopocon.org/</a>"
+        }
+    ]
+}

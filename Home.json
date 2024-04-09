@@ -1,0 +1,39 @@
+{
+    "Main":
+    {
+        "Title":"Welcome To The Wildlife Of Sri Lanka",
+        "Description":"One one the most beautiful places to ever exist sure to leave you astonished"
+    },
+    "Body":[  
+        {
+             "Title":"Endangered animals",
+             "Description1":"Even though Sri Lanka famous for its wildlife there are number of wild animal species that are threatened with extinction because of human behaviors.",
+             "Description2":"Same time there is threatened flora and fauna to extinct."
+        },
+        {
+            "Title":"Indeginous animals",
+            "Description1":"Sri Lankan junglefowl, Purple-faced langur and Sri Lanka blue magpie are",
+            "Description2":" some of common endemic animals that can be observed."
+        },
+        {
+            "Title":"Threats to Wildlife",
+            "Description1":"Deforestation and habitat destruction in Sri Lanka's rainforests pose a significant threat to the country's rich biodiversity, which includes a diverse ",
+            "Description2":"range of ecosystems and unique flora and fauna."
+        }
+    ],
+    "Smain":
+    {
+        "Title":"Most Visited Locations"
+    },
+    "End":[
+        {
+            "Title":"Yala National Park"
+        },
+        {
+            "Title":"Wilpattu National Park"
+        },
+        {
+            "Title":"Horton Plains"
+        }
+    ]
+}

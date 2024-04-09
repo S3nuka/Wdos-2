@@ -1,0 +1,17 @@
+{
+    "Main":
+    {
+        "Title":"Welcome To The Wildlife Of Sri Lanka",
+        "Description":"Sri Lanka is known as one of the best places to visit for the greatest experiences in wildlife attractions in the world. Due to the gigantic size of the Wilpattu National Park and its fertile nature. It has become one of the finest wildlife watching locations in Sri Lanka."
+    },
+    "Body":[
+        {
+            "Title":"Wildlife",
+            "Description":"Willpattu National park has more than 30 species of mammals. It is home to Sri Lankan elephants, sloth bears, spotted deer, water buffaloes, and Langurs. It is also home to the animal that attracts many tourists: the Sri Lankan leopard."
+        },
+        {
+            "Title":"Flora",
+            "Description":"Wilpattu National Park has over 623 species of flowering plants scattered around the varying landscapes and habitats across the park. From introduced species from Africato endemic species of orchids, or mangroves in the coast, these plants provide homes and sustenance to many species of wildlife."
+        }
+    ]
+}

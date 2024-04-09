@@ -1,0 +1,17 @@
+{
+    "Main":
+    {
+        "Title":"Yala National Park",
+        "Description":"It’s home to Panthera pardus kotiya, a majestic leopard endemic to Sri Lanka. But among the glorious spectacle of wildlife, you’d also witness the tell-tale signs of a lost civilization."
+    },
+    "Body":[
+        {
+            "Title":"Wildlife",
+            "Description":"Yala National Park’s leopard density is higher than anywhere else on Earth (2.5 every square mile). These ‘lords of the jungle’, as they are known, can be seen in scrub or lowlands, especially in the morning or at dusk. They mainly hunt deer and wild boar."
+        },
+        {
+            "Title":"Flora",
+            "Description":"Yala presents a rich mixture of habitats, with the predominant being coastal dry deciduous forest; there are also very diverse types of ecosystem including scrubland, brackish lagoon, freshwater lagoon and coastal dunes"
+        }
+    ]
+}
